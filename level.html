@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Levels</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: #7132cd63;
+      }
+      .level {
+        height: 64px;
+        width: 100%;
+        background-color: purple;
+        color: red;
+        border-radius: 3px;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .level-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .level-button {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: #0817f3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>BRICKSOUT</h1> -->
+
+    <h2 class="level">Levels</h2>
+    <div class="level-container">
+      <button class="level-button" onclick="switchtolevel1()">Level 1</button>
+      <button class="level-button" onclick="switchtolevel2()">Level 2</button>
+      <button class="level-button" onclick="switchtolevel3()">Level 3</button>
+      <button class="level-button" onclick="switchtoleve4()">Level 4</button>
+      <button class="level-button" onclick="switchtolevel5()">Level 5</button>
+      <button class="level-button" onclick="switchtolevel6()">Level 6</button>
+      <button class="level-button" onclick="switchtolevel7()">Level 7</button>
+      <button class="level-button" onclick="switchtolevel8()">Level 8</button>
+      <button class="level-button" onclick="switchtolevel9()">Level 9</button>
+      <button class="level-button" onclick="switchtolevel10()">Level 10</button>
+    </div>
+  </body>
+  <script>
+    // sound sections
+    const backgroundsound = new Audio("main.wav");
+    backgroundsound.play();
+    function switchtolevel1() {
+      window.location.href = "level1.html";
+    }
+    function switchtolevel2() {
+      window.location.href = "level2.html";
+    }
+    function switchtolevel3() {
+      window.location.href = "level3.html";
+    }
+  </script>
+</html>

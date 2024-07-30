@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-image: url('backgound.png'); /* Replace 'background.jpg' with your image name */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .welcome {
+      height: 64px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+      color: red;
+      border-radius: 3px;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #enter {
+      position: absolute;
+      bottom: 20px;
+      left: 33%;
+      transform: translateX(-50%);
+      background-color: #0817F3;
+      color: white;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+      #enter1 {
+      position: absolute;
+      bottom: 20px;
+      left: 66%;
+      transform: translateX(-50%);
+      background-color: #0817F3;
+      color: white;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="welcome">
+    VICTORY!!
+    <form>
+      <input id="enter" type="button" value="Enter to Play again" onclick="switchtoindex()" />
+      <input id="enter1" type="button" value="Levels" onclick="switchtolevels()" />
+      
+    </form>
+    
+  </h2>
+  <!-- <form class="welcome"> -->
+  <!-- </form> -->
+  <script>
+    let winsound=new Audio('victory.mp3');
+    winsound.play();
+    function switchtoindex() {
+      window.location.href = "index.html";
+    }
+    function switchtolevels() {
+      window.location.href = "level.html";
+    }
+  </script>
+</body>
+</html>

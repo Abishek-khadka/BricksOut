@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #76dd00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  max-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+canvas {
+  background: #f0f0f0;
+  display: block;
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  background: #222;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.rules-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: #fff;
+  min-height: 100vh;
+  width: 400px;
+  padding: 20px;
+  line-height: 1.5;
+  transform: translateX(-400px);
+  transition: transform 1s ease-in-out;
+}
+
+.score {
+    position: absolute;
+    top: 16px;
+    right: 40px;
+    background: #333;
+    color: #fff;
+    width: 106px;
+    padding: 14px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.rules.show {
+  transform: translateX(0);
+}

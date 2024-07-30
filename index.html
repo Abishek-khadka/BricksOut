@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      
+    margin: 0;
+    padding: 0;
+    /* background-image: url("backgound.png"); */
+    background-image: url("backgound.png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-position: center; */
+ 
+    }
+    .welcome {
+      /* Remove the fixed height */
+      /* height: 64px; */
+      width: 100%;
+     
+      background-repeat: no-repeat;
+      background-color: purple;
+      color: red;
+      border-radius: 3px;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #enter2 {
+      position: absolute;
+      background-image: url('red.jpeg');
+      bottom: 110px;
+      left: 60%;
+      transform: translateX(-50%);
+      background-color: #f30808;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #enter {
+      position: absolute;
+      background-image: url('red.jpeg');
+      bottom: 110px;
+      left: 20%;
+      transform: translateX(-50%);
+      background-color: #f30808;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #enter1 {
+      position: absolute;
+      background-image: url('red.jpeg');
+      bottom: 110px;
+      left:40%;
+      transform: translateX(-50%);
+      background-color: #f30808;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #enter3 {
+      position: absolute;
+      background-image: url('red.jpeg');
+      bottom: 110px;
+      left:80%;
+      transform: translateX(-50%);
+      background-color: #f30808;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    
+  </style>
+  
+</head>
+<body class="photo">
+  <h2 class="welcome">
+    <marquee behavior="alternate" direction="right">WELCOME TO BRICKSOUT</marquee>
+  </h2>
+  <form>
+    <input id="enter2" type="button" value=" Demo" onclick="switchtodemo()" />
+    <input id="enter" type="button" value=" Show Levels" onclick="switchtoindex()" />
+    <input id="enter1" type="button" value=" Infinite Game" onclick="switchtoinfinite()"/> 
+    <input id="enter3" type="button" value=" About me" onclick="switchtome()"/> 
+
+  </form>
+
+  <script>
+    // sound sections
+    const backgroundsound =new Audio('main.wav');
+    backgroundsound.play();
+    function switchtoindex() {
+      window.location.href = "level.html";
+    }
+    function switchtodemo() {
+      window.location.href = "demo.html";
+    }
+    function switchtoinfinite() {
+      window.location.href = "infinite.html";
+    }
+    function switchtome(){
+      window.location.href = "https://www.linkedin.com/in/abishek-khadka-29015730b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
+    }
+  </script>
+</html>
